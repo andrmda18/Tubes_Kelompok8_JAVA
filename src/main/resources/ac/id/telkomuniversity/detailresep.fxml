@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.?>
+<?import javafx.scene.image.?>
+<?import javafx.scene.layout.?>
+<?import javafx.scene.text.?>
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="600" prefWidth="800" style="-fx-background-color: #FFF9E5;">
     <children>
