@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.?>
+<?import javafx.scene.image.?>
+<?import javafx.scene.layout.?>
+<?import javafx.scene.text.?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="600" prefWidth="800" style="-fx-background-color: #FFF9E5;">
+    <children>
+        <!-- Left Image Section -->
+        <VBox layoutX="50" layoutY="50" spacing="10">
+            <children>
+                <ImageView fitWidth="300" fitHeight="200">
+                    <image>
+                        <Image url="@main-food.png" />
+                    </image>
+                </ImageView>
+                <HBox spacing="10">
+                    <Button text="<" style="-fx-background-color: #F2E4C6; -fx-text-fill: black;" />
+                    <HBox spacing="5">
+                        <children>
+                            <ImageView fitWidth="50" fitHeight="50">
+                                <image>
+                                    <Image url="@food1.png" />
+                                </image>
+                            </ImageView>
+                            <ImageView fitWidth="50" fitHeight="50">
+                                <image>
+                                    <Image url="@food2.png" />
+                                </image>
+                            </ImageView>
+                            <ImageView fitWidth="50" fitHeight="50">
+                                <image>
+                                    <Image url="@food3.png" />
+                                </image>
+                            </ImageView>
+                            <ImageView fitWidth="50" fitHeight="50">
+                                <image>
+                                    <Image url="@food4.png" />
+                                </image>
+                            </ImageView>
+                        </children>
+                    </HBox>
+                    <Button text=">" style="-fx-background-color: #F2E4C6; -fx-text-fill: black;" />
+                </HBox>
+            </children>
+        </VBox>
+
+        <!-- Right Content Section -->
+        <VBox layoutX="400" layoutY="50" spacing="20" prefWidth="350">
+            <children>
+                <!-- Title -->
+                <Label text="Nasi Goreng" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+                <!-- Metadata -->
+                <VBox spacing="5">
+                    <Label text="Diupload pada: 15 - Desember - 2024" style="-fx-text-fill: gray;" />
+                    <HBox spacing="10">
+                        <Label text="Author" graphicTextGap="5" />
+                        <Label text="20 menit" graphicTextGap="5" />
+                        <Label text="5 bahan" graphicTextGap="5" />
+                    </HBox>
+                </VBox>
+
+                <!-- Ingredients -->
+                <VBox spacing="5">
+                    <Label text="Bahan - bahan" style="-fx-font-weight: bold;" />
+                    <Label text="• Nasi\n• Margarine\n• Telur\n• Ikan Teri\n• Bumbu-bumbu" />
+                </VBox>
+
+                <!-- Tools -->
+                <VBox spacing="5">
+                    <Label text="Alat dan perlengkapan" style="-fx-font-weight: bold;" />
+                    <Label text="• Teflon\n• Spatula\n• Minyak secukupnya" />
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
