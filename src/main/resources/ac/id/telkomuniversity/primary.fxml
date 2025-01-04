@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <!-- Sidebar di sebelah kiri -->
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #2c3e50; -fx-padding: 20;">
+            <Label text="Menu Navigasi" style="-fx-text-fill: #ecf0f1; -fx-font-size: 16;" />
+            <Button text="Beranda" style="-fx-background-color: #34495e; -fx-text-fill: #ecf0f1; -fx-padding: 10;" />
+            <Button text="Tentang" style="-fx-background-color: #34495e; -fx-text-fill: #ecf0f1; -fx-padding: 10;" />
+            <Button text="Layanan" style="-fx-background-color: #34495e; -fx-text-fill: #ecf0f1; -fx-padding: 10;" />
+            <Button text="Kontak" style="-fx-background-color: #34495e; -fx-text-fill: #ecf0f1; -fx-padding: 10;" />
+        </VBox>
+    </left>
+
+    <!-- Konten utama di tengah -->
+    <center>
+        <HBox spacing="20" style="-fx-padding: 20;">
+            <!-- Gambar di sebelah kiri -->
+            <ImageView fitWidth="300" fitHeight="300" preserveRatio="true">
+                <Image url="https://via.placeholder.com/300" />
+            </ImageView>
+
+            <!-- Form di sebelah kanan -->
+            <VBox spacing="10">
+                <Label text="Upload Postingan" style="-fx-font-size: 18; -fx-font-weight: bold;" />
+
+                <Label text="Judul Resep" />
+                <TextField promptText="Masukkan judul resep" />
+
+                <Label text="Bahan-bahan" />
+                <TextArea promptText="Masukkan bahan-bahan" />
+
+                <Label text="Langkah-langkah" />
+                <TextArea promptText="Masukkan langkah-langkah" />
+
+                <Label text="Kategori" />
+                <ComboBox promptText="Pilih kategori" />
+
+                <!-- Tombol Upload dan Cancel -->
+                <HBox spacing="10">
+                    <Button text="Upload" style="-fx-background-color: #1abc9c; -fx-text-fill: white;" />
+                    <Button text="Cancel" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" />
+                </HBox>
+            </VBox>
+        </HBox>
+    </center>
+</BorderPane>
